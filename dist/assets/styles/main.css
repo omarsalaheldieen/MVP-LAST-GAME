@@ -1,0 +1,26 @@
+/*!*********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
+  \*********************************************************************************************************/
+#data_intro {
+  z-index: 1;
+}
+
+#photo_intro {
+  position: absolute;
+  top: 0px;
+}
+
+#photo_outro {
+  position: absolute;
+  top: 0px;
+}
+
+#animation_outr {
+  position: absolute;
+  top: 0px;
+}
+
+#animation_loop {
+  position: absolute;
+  top: 0px;
+}

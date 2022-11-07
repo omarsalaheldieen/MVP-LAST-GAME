@@ -21,6 +21,7 @@ import "./animations/images/roles/JNG.png";
 import "./animations/images/roles/MID.png";
 import "./animations/images/roles/SUPP.png";
 import "./animations/images/roles/TOP.png";
+import "./index.scss";
 
 const data_intro = {
   container: document.getElementById("data_intro"),
@@ -85,7 +86,7 @@ let data_intro_animation;
 let data_outro_animation;
 let photo_intro_animation;
 let photo_outro_animation;
-const socket = io("http://192.168.43.98:3003/lol-controller");
+const socket = io("http://192.168.1.4:3003/lol-controller");
 // Start Animation
 socket.on("MVPLastGame", (data) => {
   console.log(data.data);
