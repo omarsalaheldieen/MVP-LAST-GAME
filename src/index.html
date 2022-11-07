@@ -5,8 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .Container {
+        width: 1920px;
+        height: 1080px;
+      }
+      #data_intro {
+        z-index: 1;
+      }
+      #photo_intro {
+        position: absolute;
+        top: 00px;
+      }
+      #photo_outro {
+        position: absolute;
+        top: 00px;
+      }
+      #animation_outr {
+        position: absolute;
+        top: 00px;
+      }
+      #animation_loop {
+        position: absolute;
+        top: 00px;
+      }
+    </style>
   </head>
   <body>
-    <div id="data_intro"></div>
+    <div class="Container">
+      <div id="animation_intro"></div>
+      <div id="animation_outro"></div>
+      <div id="animation_photo"></div>
+      <div id="data_intro"></div>
+      <div id="animation_loop"></div>
+      <div id="data_outro"></div>
+      <div id="animation_outr"></div>
+      <div id="photo_intro"></div>
+      <div id="photo_outro"></div>
+    </div>
   </body>
 </html>
