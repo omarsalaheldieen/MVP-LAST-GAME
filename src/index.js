@@ -85,7 +85,7 @@ let data_intro_animation;
 let data_outro_animation;
 let photo_intro_animation;
 let photo_outro_animation;
-const socket = io("http://192.168.1.3:3003/lol-controller");
+const socket = io("http://192.168.43.98:3003/lol-controller");
 // Start Animation
 socket.on("MVPLastGame", (data) => {
   console.log(data.data);
@@ -157,8 +157,7 @@ socket.on("MVPLastGame", (data) => {
     animation_loop = Lottie.loadAnimation(loop);
   }, 1700);
 });
-data_intro_animation = Lottie.loadAnimation(data_intro);
-photo_intro_animation = Lottie.loadAnimation(photo_intro);
+
 // End animations
 socket.on("MVPLastGame:outro", () => {
   data_intro_animation.destroy();
